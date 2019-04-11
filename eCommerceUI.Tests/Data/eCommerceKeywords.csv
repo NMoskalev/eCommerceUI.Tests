@@ -1,0 +1,12 @@
+Step;Selector;Action;Params(| separated)
+open_catalog;.//div[@id='mainContent']//div[@class='hl-cat-nav']//ul[@class='hl-cat-nav__container']//li//a[text()='{0}'];click;Electronics
+open_subcatalog;.//div[@id='mainContent']//section[contains(@class,'b-module')]//div[@class='b-visualnav__grid']//a[contains(@class,'b-visualnav__tile')]//div[text()='{0}'];click;Smart Watches
+focus_sorting;.//button[@data-w-onclick='toggle|w8-w0-w1'];scroll-and-click;
+show_sorting;.//button[@data-w-onclick='toggle|w8-w0-w1' and @aria-expanded='false'];if-click;
+sort_subcatalog;.//div[@id='w8-w0-w1']//div[contains(@class, 'flyout-notice--information')]//div[@class='srp-sort']//ul//li[@class='btn']//a[span/text()='{0}'];click;Price + Shipping: highest first
+open_product_1;.//li[@id='w5-items[{0}]']//div[contains(@class, 's-item__wrapper')]//div[@class='s-item__image-section']//div[@class='s-item__image']//a;scroll-and-click;0
+add_to_cart;.//a[@id='isCartBtn_btn'];click;
+back;;back;
+back;;back;
+open_product_2;.//li[@id='w5-items[{0}]']//div[contains(@class, 's-item__wrapper')]//div[@class='s-item__image-section']//div[@class='s-item__image']//a;scroll-and-click;1
+add_to_cart;.//a[@id='isCartBtn_btn'];click;
